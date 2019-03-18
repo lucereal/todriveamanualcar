@@ -1,1 +1,0 @@
-var assets = require('../assets/');
