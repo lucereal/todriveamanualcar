@@ -8,8 +8,12 @@
   <div id="content"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
   <script>
+    marked.setOptions({
+      renderer: new myMarked.Renderer(),
+      baseUrl: './instructions.md'
+    })
     document.getElementById('content').innerHTML =
-      marked('./instructions.md');
+      marked();
   </script> 
 </body>
 </html>
